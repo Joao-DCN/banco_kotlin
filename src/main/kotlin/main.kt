@@ -21,10 +21,10 @@ fun main() {
     // variável de saldo do usuario
     var saldo = BigDecimal("0.0")
 
-    // estrutura de repetição enfinita
+    // estrutura de repetição infinita
     while (true) {
 
-        // função de mostrar saldo e alterações pussíveis
+        // função de mostrar saldo e alterações possíveis
         TelaDeSaldo(saldo)
 
         // variável de escolha de alternativa
@@ -35,7 +35,7 @@ fun main() {
             saldo += EditarSaldo(alternatva)
         }
 
-        // se não ativa o break terminando com a estrutura de repetição enfinita
+        // se não ativa o break terminando com a estrutura de repetição infinita
         else{
             println("saindo........")
             break
@@ -57,11 +57,11 @@ fun TelaBemVindo(){
     println("+----------------+")
 }
 
-// função de mostrar saldo e alterações pussíveis
+// função de mostrar saldo e alterações possíveis
 fun TelaDeSaldo(saldo: BigDecimal){
     println("+--------------+")
     println("|SALDO ATUAL = | $saldo")
-    println("|ADISSIONAR  1 |")
+    println("|ADICIONAR   1 |")
     println("|SAQUE       2 |")
     println("|SAIR        0 |")
     println("+--------------+")
